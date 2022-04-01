@@ -43,10 +43,10 @@ const mapChamp = () => {
         }
         return shuffleChampions;
     }
-    for (let i = 0; i < images.length; i++) {
-        const champ = { url: images[i], name: names[i] };
-        champions.push(champ);
-    }
+    // for (let i = 0; i < images.length; i++) {
+    //     const champ = { url: images[i], name: names[i] };
+    //     champions.push(champ);
+    // }
     function shuffleChampions() {
         for (let i = champions.length - 1; i > 0; i--) {
             // Generate random number
@@ -58,7 +58,7 @@ const mapChamp = () => {
         }
         return champions;
     }
-    return { champions, shuffleChampions, getLevel };
+    return { getLevel };
 }
 
 export default mapChamp;

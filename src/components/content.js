@@ -58,6 +58,7 @@ const Content = () => {
         if (gameOver) {
             setClicked([]);
             setScore(0);
+            gameOver = false;
         }
         else {
             setScore(score + 1);
