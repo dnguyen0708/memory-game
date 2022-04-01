@@ -1,0 +1,31 @@
+.content {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* padding: 0 12px; */
+    justify-items: center;
+    row-gap: 25px;
+}
+
+.champion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.score,
+.best-score {
+    position: absolute;
+    font-size: 50px;
+}
+
+.score {
+    top: 15px;
+    right: 30px;
+}
+
+.best-score {
+    top: 75px;
+    right: 30px;
+}
